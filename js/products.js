@@ -3,31 +3,31 @@ const products = [
     // Bebidas Alcohólicas
     {
         id: 'a1',
-        name: 'Vino Malbec Premium',
-        description: 'Vino tinto Malbec de alta calidad, con notas de frutos rojos y un final persistente.',
-        price: 2500,
+        name: 'Vino Otro Loco Mas Malbec',
+        description: 'Vino tinto Malbec de alta calidad',
+        price: 4400,
         category: 'alcoholicas',
-        image: 'img/products/vino-malbec.jpg',
+        image: '/img/bebidas-alcoholicas/otro_loco_mas.jpg',
         featured: true,
-        stock: 24
+        stock: 15
     },
     {
         id: 'a2',
-        name: 'Cerveza Artesanal IPA',
-        description: 'Cerveza artesanal estilo IPA con intenso sabor a lúpulo y notas cítricas.',
-        price: 850,
+        name: 'Fernet Branca x 750ml',
+        description: 'Aperitivo Fernet Branca.',
+        price: 11500,
         category: 'alcoholicas',
-        image: 'img/products/cerveza-ipa.jpg',
+        image: 'img/bebidas-alcoholicas/Fernet-Branca-Amaro.png',
         featured: true,
-        stock: 48
+        stock: 3
     },
     {
         id: 'a3',
-        name: 'Whisky Escocés 12 años',
-        description: 'Whisky escocés añejado por 12 años en barricas de roble, con sabor suave y ahumado.',
-        price: 8500,
+        name: 'Vino Corderos x 750ml',
+        description: 'Vino Cordero Malbec.',
+        price: 4900,
         category: 'alcoholicas',
-        image: 'img/products/whisky.jpg',
+        image: 'img/bebidas-alcoholicas/Vinho-Cordero-Con-Piel-De-Lobo-750-mlok.png',
         featured: false,
         stock: 10
     },
