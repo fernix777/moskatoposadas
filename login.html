@@ -166,29 +166,61 @@
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/auth.js"></script>
     <script>
+        // Verificar si hay una sesión activa al cargar la página
+        document.addEventListener('DOMContentLoaded', function() {
+            const session = getActiveSession();
+            if (session) {
+                window.location.href = 'index.html';
+            }
+        });
+
         // Manejar envío del formulario de login
         document.getElementById('login-form').addEventListener('submit', function(event) {
             event.preventDefault();
-            alert('Funcionalidad de inicio de sesión en desarrollo.');
-            // Aquí se implementaría la lógica de autenticación
+            
+            const email = document.getElementById('login-email').value;
+            const password = document.getElementById('login-password').value;
+            
+            try {
+                const session = loginUser(email, password);
+                showMessage(`¡Bienvenido ${session.name}!`);
+                setTimeout(() => {
+                    window.location.href = 'index.html';
+                }, 1500);
+            } catch (error) {
+                showMessage(error.message, true);
+            }
         });
         
         // Manejar envío del formulario de registro
         document.getElementById('register-form').addEventListener('submit', function(event) {
             event.preventDefault();
             
-            // Validar que las contraseñas coincidan
+            const name = document.getElementById('register-name').value;
+            const email = document.getElementById('register-email').value;
+            const phone = document.getElementById('register-phone').value;
             const password = document.getElementById('register-password').value;
             const confirmPassword = document.getElementById('register-confirm-password').value;
             
             if (password !== confirmPassword) {
-                alert('Las contraseñas no coinciden');
+                showMessage('Las contraseñas no coinciden', true);
                 return;
             }
             
-            alert('Registro exitoso. ¡Bienvenido a Moskato!');
-            // Aquí se implementaría la lógica de registro
+            try {
+                registerUser(name, email, phone, password);
+                showMessage('¡Registro exitoso! Por favor, inicia sesión.');
+                
+                // Limpiar formulario y cambiar a la pestaña de login
+                document.getElementById('register-form').reset();
+                const loginTab = document.getElementById('login-tab');
+                const tab = new bootstrap.Tab(loginTab);
+                tab.show();
+            } catch (error) {
+                showMessage(error.message, true);
+            }
         });
     </script>
 </body>
