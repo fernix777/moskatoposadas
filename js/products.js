@@ -34,7 +34,7 @@ const products = [
     {
         id: 'a4',
         name: 'Gin Premium',
-        description: 'Gin premium con botánicos seleccionados, ideal para cócteles sofisticados.',
+        description: 'Gin premium con botánicos seleccionados, ideal para cócteles sofisticados y servicio de delivery 24 horas.',
         price: 4200,
         category: 'alcoholicas',
         image: 'img/products/gin.jpg',
@@ -44,7 +44,7 @@ const products = [
     {
         id: 'a5',
         name: 'Vodka Importado',
-        description: 'Vodka de alta calidad, destilado cinco veces para mayor pureza.',
+        description: 'Vodka de alta calidad, destilado cinco veces para mayor pureza. Disponible en nuestro servicio de delivery cerca de tu ubicación.',
         price: 3800,
         category: 'alcoholicas',
         image: 'img/products/vodka.jpg',
@@ -54,7 +54,7 @@ const products = [
     {
         id: 'a6',
         name: 'Fernet',
-        description: 'El clásico aperitivo italiano, perfecto para combinar.',
+        description: 'El clásico aperitivo italiano, perfecto para combinar. Entrega inmediata las 24 horas en Posadas.',
         price: 2200,
         category: 'alcoholicas',
         image: 'img/products/fernet.jpg',
@@ -66,7 +66,7 @@ const products = [
     {
         id: 'na1',
         name: 'Agua Mineral 2L',
-        description: 'Agua mineral natural sin gas, de manantial.',
+        description: 'Agua mineral natural sin gas, de manantial. Pedí delivery las 24 horas desde nuestra tienda online.',
         price: 350,
         category: 'no-alcoholicas',
         image: 'img/products/agua.jpg',

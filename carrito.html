@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrito de Compras - Moskato | Barrio San Isidro, Posadas</title>
     <meta name="description" content="Finaliza tu compra en Moskato, tu tienda de bebidas en el barrio San Isidro, Posadas, Misiones. Venta minorista y mayorista de vinos, cervezas, fernet y más con entrega a domicilio.">
-    <meta name="keywords" content="carrito Moskato, comprar bebidas Posadas, barrio San Isidro, Misiones, venta minorista, venta mayorista, delivery bebidas, vinos, cervezas, fernet">
+    <meta name="keywords" content="carrito Moskato, comprar bebidas Posadas, barrio San Isidro, Misiones, venta minorista, venta mayorista, delivery bebidas 24 hs, delivery de bebidas cerca de mi, vinos, cervezas, fernet">
     <meta property="og:title" content="Carrito de Compras - Moskato Posadas">
     <meta property="og:description" content="Finaliza tu compra en tu tienda de bebidas favorita en el barrio San Isidro, Posadas, Misiones.">
     <meta property="og:url" content="https://moskatoposadas.com/carrito.html">
@@ -82,8 +82,13 @@
                             <span>Total:</span>
                             <span>$<span id="cart-total-final">0.00</span></span>
                         </div>
-                        <button class="btn btn-primary w-100" id="checkout-button">Proceder al pago</button>
-                        <a href="productos.html" class="btn btn-outline-secondary w-100 mt-2">Seguir comprando</a>
+                        <div id="payment-container"></div>
+                        <div class="payment-options mt-3">
+                            <button class="btn btn-primary w-100 mb-2" id="checkout-button">Pagar con Mercado Pago</button>
+                            <button class="btn btn-outline-success w-100 mb-2" id="bank-transfer-button">Transferencia Bancaria</button>
+                            <button class="btn btn-outline-info w-100 mb-2" id="cash-payment-button">Pago en Efectivo</button>
+                            <a href="productos.html" class="btn btn-outline-secondary w-100">Seguir comprando</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -130,15 +135,73 @@
 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://sdk.mercadopago.com/js/v2"></script>
     <script src="js/main.js"></script>
     <script src="js/products.js"></script>
-    <script>
-        // Inicializar el botón de checkout
-        document.getElementById('checkout-button').addEventListener('click', function() {
-            if (typeof processCheckout === 'function') {
-                processCheckout();
+    <script src="js/payment.js" type="module"></script>
+    <script type="module">
+        // Inicializar botones de pago
+        // Módulos importados
+        import { showCustomerForm } from './js/customer-form.js';
+        import { initMercadoPagoCheckout, processBankTransfer, processCashPayment } from './js/payment.js';
+
+        document.addEventListener('DOMContentLoaded', async function() {
+            const cart = JSON.parse(localStorage.getItem('moskato_cart')) || [];
+            
+            if (!cart.length) {
+                document.querySelectorAll('.payment-options button').forEach(btn => btn.disabled = true);
+                return;
             }
+
+
+            // Botón de Mercado Pago
+            document.getElementById('checkout-button').addEventListener('click', async function() {
+                try {
+                    const customerData = await showCustomerForm();
+                    await initMercadoPagoCheckout(cart, customerData);
+                } catch (error) {
+                    console.error('Error al iniciar checkout:', error);
+                    showErrorMessage('No se pudo iniciar el proceso de pago. Por favor, verifica tus datos e intenta nuevamente.');
+                }
+            });
+
+            // Botón de Transferencia Bancaria
+            document.getElementById('bank-transfer-button').addEventListener('click', async function() {
+                try {
+                    const customerData = await showCustomerForm();
+                    const orderData = {
+                        items: cart,
+                        total: cart.reduce((sum, item) => sum + (item.price * item.quantity), 0),
+                        customer: customerData
+                    };
+                    
+                    const order = await processBankTransfer(orderData);
+                    window.location.href = `pending.html?order_id=${order.id}&payment_method=bank_transfer`;
+                } catch (error) {
+                    console.error('Error al procesar transferencia:', error);
+                    showErrorMessage('No se pudo procesar la transferencia. Por favor, intenta más tarde.');
+                }
+            });
+
+            // Botón de Pago en Efectivo
+            document.getElementById('cash-payment-button').addEventListener('click', async function() {
+                try {
+                    const customerData = await showCustomerForm();
+                    const orderData = {
+                        items: cart,
+                        total: cart.reduce((sum, item) => sum + (item.price * item.quantity), 0),
+                        customer: customerData
+                    };
+                    
+                    const order = await processCashPayment(orderData);
+                    window.location.href = `pending.html?order_id=${order.id}&payment_method=cash`;
+                } catch (error) {
+                    console.error('Error al procesar pago en efectivo:', error);
+                    showErrorMessage('No se pudo procesar el pago. Por favor, intenta más tarde.');
+                }
+            });
         });
+
         
         // Actualizar el total final
         document.addEventListener('DOMContentLoaded', function() {
