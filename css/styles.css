@@ -5,6 +5,65 @@ body {
     line-height: 1.6;
 }
 
+/* Botón WhatsApp fijo */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    animation: float 2s ease-in-out infinite;
+}
+
+.whatsapp-btn a {
+    background: #25D366;
+    background: #25D366;
+    padding: 12px 20px;
+    border-radius: 30px;
+    color: white !important;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-btn a:hover {
+    background: #128C7E;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.whatsapp-btn i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.whatsapp-btn span {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(30px); }
+}
+
+@media (max-width: 768px) {
+    .whatsapp-btn {
+        bottom: 20px;
+        right: 15px;
+    }
+    .whatsapp-btn a {
+    background: #25D366;
+        padding: 10px 15px;
+    }
+    .whatsapp-btn span {
+        display: none;
+    }
+}
+
 /* Hero Section */
 .hero-section {
     position: relative;
@@ -12,6 +71,65 @@ body {
     padding: 150px 0;
     margin-bottom: 30px;
     overflow: hidden;
+}
+
+/* Botón WhatsApp fijo */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    animation: float 2s ease-in-out infinite;
+}
+
+.whatsapp-btn a {
+    background: #25D366;
+    background: #25D366;
+    padding: 12px 20px;
+    border-radius: 30px;
+    color: white !important;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-btn a:hover {
+    background: #128C7E;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.whatsapp-btn i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.whatsapp-btn span {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(30px); }
+}
+
+@media (max-width: 768px) {
+    .whatsapp-btn {
+        bottom: 20px;
+        right: 15px;
+    }
+    .whatsapp-btn a {
+    background: #25D366;
+        padding: 10px 15px;
+    }
+    .whatsapp-btn span {
+        display: none;
+    }
 }
 
 .hero-section video {
@@ -22,6 +140,65 @@ body {
     height: 100%;
     object-fit: cover;
     z-index: -1;
+}
+
+/* Botón WhatsApp fijo */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    animation: float 2s ease-in-out infinite;
+}
+
+.whatsapp-btn a {
+    background: #25D366;
+    background: #25D366;
+    padding: 12px 20px;
+    border-radius: 30px;
+    color: white !important;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-btn a:hover {
+    background: #128C7E;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.whatsapp-btn i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.whatsapp-btn span {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(30px); }
+}
+
+@media (max-width: 768px) {
+    .whatsapp-btn {
+        bottom: 20px;
+        right: 15px;
+    }
+    .whatsapp-btn a {
+    background: #25D366;
+        padding: 10px 15px;
+    }
+    .whatsapp-btn span {
+        display: none;
+    }
 }
 
 .hero-section::after {
@@ -35,18 +212,254 @@ body {
     z-index: -1;
 }
 
+/* Botón WhatsApp fijo */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    animation: float 2s ease-in-out infinite;
+}
+
+.whatsapp-btn a {
+    background: #25D366;
+    background: #25D366;
+    padding: 12px 20px;
+    border-radius: 30px;
+    color: white !important;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-btn a:hover {
+    background: #128C7E;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.whatsapp-btn i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.whatsapp-btn span {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(30px); }
+}
+
+@media (max-width: 768px) {
+    .whatsapp-btn {
+        bottom: 20px;
+        right: 15px;
+    }
+    .whatsapp-btn a {
+    background: #25D366;
+        padding: 10px 15px;
+    }
+    .whatsapp-btn span {
+        display: none;
+    }
+}
+
 .hero-content {
     position: relative;
     z-index: 1;
+}
+
+/* Botón WhatsApp fijo */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    animation: float 2s ease-in-out infinite;
+}
+
+.whatsapp-btn a {
+    background: #25D366;
+    background: #25D366;
+    padding: 12px 20px;
+    border-radius: 30px;
+    color: white !important;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-btn a:hover {
+    background: #128C7E;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.whatsapp-btn i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.whatsapp-btn span {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(30px); }
+}
+
+@media (max-width: 768px) {
+    .whatsapp-btn {
+        bottom: 20px;
+        right: 15px;
+    }
+    .whatsapp-btn a {
+    background: #25D366;
+        padding: 10px 15px;
+    }
+    .whatsapp-btn span {
+        display: none;
+    }
 }
 
 .hero-title {
     animation: fadeInDown 1s ease-out;
 }
 
+/* Botón WhatsApp fijo */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    animation: float 2s ease-in-out infinite;
+}
+
+.whatsapp-btn a {
+    background: #25D366;
+    background: #25D366;
+    padding: 12px 20px;
+    border-radius: 30px;
+    color: white !important;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-btn a:hover {
+    background: #128C7E;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.whatsapp-btn i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.whatsapp-btn span {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(30px); }
+}
+
+@media (max-width: 768px) {
+    .whatsapp-btn {
+        bottom: 20px;
+        right: 15px;
+    }
+    .whatsapp-btn a {
+    background: #25D366;
+        padding: 10px 15px;
+    }
+    .whatsapp-btn span {
+        display: none;
+    }
+}
+
 .hero-text {
     animation: fadeInUp 1s ease-out 0.3s;
     animation-fill-mode: both;
+}
+
+/* Botón WhatsApp fijo */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    animation: float 2s ease-in-out infinite;
+}
+
+.whatsapp-btn a {
+    background: #25D366;
+    background: #25D366;
+    padding: 12px 20px;
+    border-radius: 30px;
+    color: white !important;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-btn a:hover {
+    background: #128C7E;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.whatsapp-btn i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.whatsapp-btn span {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(30px); }
+}
+
+@media (max-width: 768px) {
+    .whatsapp-btn {
+        bottom: 20px;
+        right: 15px;
+    }
+    .whatsapp-btn a {
+    background: #25D366;
+        padding: 10px 15px;
+    }
+    .whatsapp-btn span {
+        display: none;
+    }
 }
 
 .hero-btn {
@@ -55,9 +468,127 @@ body {
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
+/* Botón WhatsApp fijo */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    animation: float 2s ease-in-out infinite;
+}
+
+.whatsapp-btn a {
+    background: #25D366;
+    background: #25D366;
+    padding: 12px 20px;
+    border-radius: 30px;
+    color: white !important;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-btn a:hover {
+    background: #128C7E;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.whatsapp-btn i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.whatsapp-btn span {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(30px); }
+}
+
+@media (max-width: 768px) {
+    .whatsapp-btn {
+        bottom: 20px;
+        right: 15px;
+    }
+    .whatsapp-btn a {
+    background: #25D366;
+        padding: 10px 15px;
+    }
+    .whatsapp-btn span {
+        display: none;
+    }
+}
+
 .hero-btn:hover {
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Botón WhatsApp fijo */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    animation: float 2s ease-in-out infinite;
+}
+
+.whatsapp-btn a {
+    background: #25D366;
+    background: #25D366;
+    padding: 12px 20px;
+    border-radius: 30px;
+    color: white !important;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-btn a:hover {
+    background: #128C7E;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.whatsapp-btn i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.whatsapp-btn span {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(30px); }
+}
+
+@media (max-width: 768px) {
+    .whatsapp-btn {
+        bottom: 20px;
+        right: 15px;
+    }
+    .whatsapp-btn a {
+    background: #25D366;
+        padding: 10px 15px;
+    }
+    .whatsapp-btn span {
+        display: none;
+    }
 }
 
 @keyframes fadeInDown {
@@ -65,9 +596,186 @@ body {
         opacity: 0;
         transform: translateY(-30px);
     }
+
+/* Botón WhatsApp fijo */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    animation: float 2s ease-in-out infinite;
+}
+
+.whatsapp-btn a {
+    background: #25D366;
+    background: #25D366;
+    padding: 12px 20px;
+    border-radius: 30px;
+    color: white !important;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-btn a:hover {
+    background: #128C7E;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.whatsapp-btn i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.whatsapp-btn span {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(30px); }
+}
+
+@media (max-width: 768px) {
+    .whatsapp-btn {
+        bottom: 20px;
+        right: 15px;
+    }
+    .whatsapp-btn a {
+    background: #25D366;
+        padding: 10px 15px;
+    }
+    .whatsapp-btn span {
+        display: none;
+    }
+}
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+
+/* Botón WhatsApp fijo */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    animation: float 2s ease-in-out infinite;
+}
+
+.whatsapp-btn a {
+    background: #25D366;
+    background: #25D366;
+    padding: 12px 20px;
+    border-radius: 30px;
+    color: white !important;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-btn a:hover {
+    background: #128C7E;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.whatsapp-btn i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.whatsapp-btn span {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(30px); }
+}
+
+@media (max-width: 768px) {
+    .whatsapp-btn {
+        bottom: 20px;
+        right: 15px;
+    }
+    .whatsapp-btn a {
+    background: #25D366;
+        padding: 10px 15px;
+    }
+    .whatsapp-btn span {
+        display: none;
+    }
+}
+}
+
+/* Botón WhatsApp fijo */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    animation: float 2s ease-in-out infinite;
+}
+
+.whatsapp-btn a {
+    background: #25D366;
+    background: #25D366;
+    padding: 12px 20px;
+    border-radius: 30px;
+    color: white !important;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-btn a:hover {
+    background: #128C7E;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.whatsapp-btn i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.whatsapp-btn span {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(30px); }
+}
+
+@media (max-width: 768px) {
+    .whatsapp-btn {
+        bottom: 20px;
+        right: 15px;
+    }
+    .whatsapp-btn a {
+    background: #25D366;
+        padding: 10px 15px;
+    }
+    .whatsapp-btn span {
+        display: none;
     }
 }
 
@@ -76,9 +784,186 @@ body {
         opacity: 0;
         transform: translateY(30px);
     }
+
+/* Botón WhatsApp fijo */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    animation: float 2s ease-in-out infinite;
+}
+
+.whatsapp-btn a {
+    background: #25D366;
+    background: #25D366;
+    padding: 12px 20px;
+    border-radius: 30px;
+    color: white !important;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-btn a:hover {
+    background: #128C7E;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.whatsapp-btn i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.whatsapp-btn span {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(30px); }
+}
+
+@media (max-width: 768px) {
+    .whatsapp-btn {
+        bottom: 20px;
+        right: 15px;
+    }
+    .whatsapp-btn a {
+    background: #25D366;
+        padding: 10px 15px;
+    }
+    .whatsapp-btn span {
+        display: none;
+    }
+}
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+
+/* Botón WhatsApp fijo */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    animation: float 2s ease-in-out infinite;
+}
+
+.whatsapp-btn a {
+    background: #25D366;
+    background: #25D366;
+    padding: 12px 20px;
+    border-radius: 30px;
+    color: white !important;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-btn a:hover {
+    background: #128C7E;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.whatsapp-btn i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.whatsapp-btn span {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(30px); }
+}
+
+@media (max-width: 768px) {
+    .whatsapp-btn {
+        bottom: 20px;
+        right: 15px;
+    }
+    .whatsapp-btn a {
+    background: #25D366;
+        padding: 10px 15px;
+    }
+    .whatsapp-btn span {
+        display: none;
+    }
+}
+}
+
+/* Botón WhatsApp fijo */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    animation: float 2s ease-in-out infinite;
+}
+
+.whatsapp-btn a {
+    background: #25D366;
+    background: #25D366;
+    padding: 12px 20px;
+    border-radius: 30px;
+    color: white !important;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-btn a:hover {
+    background: #128C7E;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.whatsapp-btn i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.whatsapp-btn span {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(30px); }
+}
+
+@media (max-width: 768px) {
+    .whatsapp-btn {
+        bottom: 20px;
+        right: 15px;
+    }
+    .whatsapp-btn a {
+    background: #25D366;
+        padding: 10px 15px;
+    }
+    .whatsapp-btn span {
+        display: none;
     }
 }
 
@@ -90,13 +975,190 @@ body {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
+/* Botón WhatsApp fijo */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    animation: float 2s ease-in-out infinite;
+}
+
+.whatsapp-btn a {
+    background: #25D366;
+    background: #25D366;
+    padding: 12px 20px;
+    border-radius: 30px;
+    color: white !important;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-btn a:hover {
+    background: #128C7E;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.whatsapp-btn i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.whatsapp-btn span {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(30px); }
+}
+
+@media (max-width: 768px) {
+    .whatsapp-btn {
+        bottom: 20px;
+        right: 15px;
+    }
+    .whatsapp-btn a {
+    background: #25D366;
+        padding: 10px 15px;
+    }
+    .whatsapp-btn span {
+        display: none;
+    }
+}
+
 .category-card:hover {
     transform: translateY(-5px);
+}
+
+/* Botón WhatsApp fijo */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    animation: float 2s ease-in-out infinite;
+}
+
+.whatsapp-btn a {
+    background: #25D366;
+    background: #25D366;
+    padding: 12px 20px;
+    border-radius: 30px;
+    color: white !important;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-btn a:hover {
+    background: #128C7E;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.whatsapp-btn i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.whatsapp-btn span {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(30px); }
+}
+
+@media (max-width: 768px) {
+    .whatsapp-btn {
+        bottom: 20px;
+        right: 15px;
+    }
+    .whatsapp-btn a {
+    background: #25D366;
+        padding: 10px 15px;
+    }
+    .whatsapp-btn span {
+        display: none;
+    }
 }
 
 .category-card img {
     height: 250px;
     object-fit: cover;
+}
+
+/* Botón WhatsApp fijo */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    animation: float 2s ease-in-out infinite;
+}
+
+.whatsapp-btn a {
+    background: #25D366;
+    background: #25D366;
+    padding: 12px 20px;
+    border-radius: 30px;
+    color: white !important;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-btn a:hover {
+    background: #128C7E;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.whatsapp-btn i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.whatsapp-btn span {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(30px); }
+}
+
+@media (max-width: 768px) {
+    .whatsapp-btn {
+        bottom: 20px;
+        right: 15px;
+    }
+    .whatsapp-btn a {
+    background: #25D366;
+        padding: 10px 15px;
+    }
+    .whatsapp-btn span {
+        display: none;
+    }
 }
 
 /* Productos */
@@ -107,8 +1169,126 @@ body {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
+/* Botón WhatsApp fijo */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    animation: float 2s ease-in-out infinite;
+}
+
+.whatsapp-btn a {
+    background: #25D366;
+    background: #25D366;
+    padding: 12px 20px;
+    border-radius: 30px;
+    color: white !important;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-btn a:hover {
+    background: #128C7E;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.whatsapp-btn i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.whatsapp-btn span {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(30px); }
+}
+
+@media (max-width: 768px) {
+    .whatsapp-btn {
+        bottom: 20px;
+        right: 15px;
+    }
+    .whatsapp-btn a {
+    background: #25D366;
+        padding: 10px 15px;
+    }
+    .whatsapp-btn span {
+        display: none;
+    }
+}
+
 .product-card:hover {
     transform: translateY(-5px);
+}
+
+/* Botón WhatsApp fijo */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    animation: float 2s ease-in-out infinite;
+}
+
+.whatsapp-btn a {
+    background: #25D366;
+    background: #25D366;
+    padding: 12px 20px;
+    border-radius: 30px;
+    color: white !important;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-btn a:hover {
+    background: #128C7E;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.whatsapp-btn i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.whatsapp-btn span {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(30px); }
+}
+
+@media (max-width: 768px) {
+    .whatsapp-btn {
+        bottom: 20px;
+        right: 15px;
+    }
+    .whatsapp-btn a {
+    background: #25D366;
+        padding: 10px 15px;
+    }
+    .whatsapp-btn span {
+        display: none;
+    }
 }
 
 .product-card img {
@@ -116,10 +1296,128 @@ body {
     object-fit: cover;
 }
 
+/* Botón WhatsApp fijo */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    animation: float 2s ease-in-out infinite;
+}
+
+.whatsapp-btn a {
+    background: #25D366;
+    background: #25D366;
+    padding: 12px 20px;
+    border-radius: 30px;
+    color: white !important;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-btn a:hover {
+    background: #128C7E;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.whatsapp-btn i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.whatsapp-btn span {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(30px); }
+}
+
+@media (max-width: 768px) {
+    .whatsapp-btn {
+        bottom: 20px;
+        right: 15px;
+    }
+    .whatsapp-btn a {
+    background: #25D366;
+        padding: 10px 15px;
+    }
+    .whatsapp-btn span {
+        display: none;
+    }
+}
+
 .product-price {
     font-weight: bold;
     color: #28a745;
     font-size: 1.2rem;
+}
+
+/* Botón WhatsApp fijo */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    animation: float 2s ease-in-out infinite;
+}
+
+.whatsapp-btn a {
+    background: #25D366;
+    background: #25D366;
+    padding: 12px 20px;
+    border-radius: 30px;
+    color: white !important;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-btn a:hover {
+    background: #128C7E;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.whatsapp-btn i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.whatsapp-btn span {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(30px); }
+}
+
+@media (max-width: 768px) {
+    .whatsapp-btn {
+        bottom: 20px;
+        right: 15px;
+    }
+    .whatsapp-btn a {
+    background: #25D366;
+        padding: 10px 15px;
+    }
+    .whatsapp-btn span {
+        display: none;
+    }
 }
 
 /* Feature boxes */
@@ -130,9 +1428,127 @@ body {
     height: 100%;
 }
 
+/* Botón WhatsApp fijo */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    animation: float 2s ease-in-out infinite;
+}
+
+.whatsapp-btn a {
+    background: #25D366;
+    background: #25D366;
+    padding: 12px 20px;
+    border-radius: 30px;
+    color: white !important;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-btn a:hover {
+    background: #128C7E;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.whatsapp-btn i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.whatsapp-btn span {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(30px); }
+}
+
+@media (max-width: 768px) {
+    .whatsapp-btn {
+        bottom: 20px;
+        right: 15px;
+    }
+    .whatsapp-btn a {
+    background: #25D366;
+        padding: 10px 15px;
+    }
+    .whatsapp-btn span {
+        display: none;
+    }
+}
+
 .feature-box:hover {
     transform: translateY(-5px);
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Botón WhatsApp fijo */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    animation: float 2s ease-in-out infinite;
+}
+
+.whatsapp-btn a {
+    background: #25D366;
+    background: #25D366;
+    padding: 12px 20px;
+    border-radius: 30px;
+    color: white !important;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-btn a:hover {
+    background: #128C7E;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.whatsapp-btn i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.whatsapp-btn span {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(30px); }
+}
+
+@media (max-width: 768px) {
+    .whatsapp-btn {
+        bottom: 20px;
+        right: 15px;
+    }
+    .whatsapp-btn a {
+    background: #25D366;
+        padding: 10px 15px;
+    }
+    .whatsapp-btn span {
+        display: none;
+    }
 }
 
 /* Footer */
@@ -140,9 +1556,127 @@ footer {
     margin-top: 50px;
 }
 
+/* Botón WhatsApp fijo */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    animation: float 2s ease-in-out infinite;
+}
+
+.whatsapp-btn a {
+    background: #25D366;
+    background: #25D366;
+    padding: 12px 20px;
+    border-radius: 30px;
+    color: white !important;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-btn a:hover {
+    background: #128C7E;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.whatsapp-btn i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.whatsapp-btn span {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(30px); }
+}
+
+@media (max-width: 768px) {
+    .whatsapp-btn {
+        bottom: 20px;
+        right: 15px;
+    }
+    .whatsapp-btn a {
+    background: #25D366;
+        padding: 10px 15px;
+    }
+    .whatsapp-btn span {
+        display: none;
+    }
+}
+
 .social-icons a {
     font-size: 1.5rem;
     margin-right: 10px;
+}
+
+/* Botón WhatsApp fijo */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    animation: float 2s ease-in-out infinite;
+}
+
+.whatsapp-btn a {
+    background: #25D366;
+    background: #25D366;
+    padding: 12px 20px;
+    border-radius: 30px;
+    color: white !important;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-btn a:hover {
+    background: #128C7E;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.whatsapp-btn i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.whatsapp-btn span {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(30px); }
+}
+
+@media (max-width: 768px) {
+    .whatsapp-btn {
+        bottom: 20px;
+        right: 15px;
+    }
+    .whatsapp-btn a {
+    background: #25D366;
+        padding: 10px 15px;
+    }
+    .whatsapp-btn span {
+        display: none;
+    }
 }
 
 /* Carrito */
@@ -152,9 +1686,127 @@ footer {
     border-bottom: 1px solid #eee;
 }
 
+/* Botón WhatsApp fijo */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    animation: float 2s ease-in-out infinite;
+}
+
+.whatsapp-btn a {
+    background: #25D366;
+    background: #25D366;
+    padding: 12px 20px;
+    border-radius: 30px;
+    color: white !important;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-btn a:hover {
+    background: #128C7E;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.whatsapp-btn i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.whatsapp-btn span {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(30px); }
+}
+
+@media (max-width: 768px) {
+    .whatsapp-btn {
+        bottom: 20px;
+        right: 15px;
+    }
+    .whatsapp-btn a {
+    background: #25D366;
+        padding: 10px 15px;
+    }
+    .whatsapp-btn span {
+        display: none;
+    }
+}
+
 .cart-item img {
     max-width: 100px;
     height: auto;
+}
+
+/* Botón WhatsApp fijo */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    animation: float 2s ease-in-out infinite;
+}
+
+.whatsapp-btn a {
+    background: #25D366;
+    background: #25D366;
+    padding: 12px 20px;
+    border-radius: 30px;
+    color: white !important;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-btn a:hover {
+    background: #128C7E;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.whatsapp-btn i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.whatsapp-btn span {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(30px); }
+}
+
+@media (max-width: 768px) {
+    .whatsapp-btn {
+        bottom: 20px;
+        right: 15px;
+    }
+    .whatsapp-btn a {
+    background: #25D366;
+        padding: 10px 15px;
+    }
+    .whatsapp-btn span {
+        display: none;
+    }
 }
 
 /* Formularios */
@@ -167,14 +1819,250 @@ footer {
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
+/* Botón WhatsApp fijo */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    animation: float 2s ease-in-out infinite;
+}
+
+.whatsapp-btn a {
+    background: #25D366;
+    background: #25D366;
+    padding: 12px 20px;
+    border-radius: 30px;
+    color: white !important;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-btn a:hover {
+    background: #128C7E;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.whatsapp-btn i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.whatsapp-btn span {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(30px); }
+}
+
+@media (max-width: 768px) {
+    .whatsapp-btn {
+        bottom: 20px;
+        right: 15px;
+    }
+    .whatsapp-btn a {
+    background: #25D366;
+        padding: 10px 15px;
+    }
+    .whatsapp-btn span {
+        display: none;
+    }
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .hero-section {
         padding: 60px 0;
     }
+
+/* Botón WhatsApp fijo */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    animation: float 2s ease-in-out infinite;
+}
+
+.whatsapp-btn a {
+    background: #25D366;
+    background: #25D366;
+    padding: 12px 20px;
+    border-radius: 30px;
+    color: white !important;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-btn a:hover {
+    background: #128C7E;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.whatsapp-btn i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.whatsapp-btn span {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(30px); }
+}
+
+@media (max-width: 768px) {
+    .whatsapp-btn {
+        bottom: 20px;
+        right: 15px;
+    }
+    .whatsapp-btn a {
+    background: #25D366;
+        padding: 10px 15px;
+    }
+    .whatsapp-btn span {
+        display: none;
+    }
+}
     
     .category-card img,
     .product-card img {
         height: 180px;
+    }
+
+/* Botón WhatsApp fijo */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    animation: float 2s ease-in-out infinite;
+}
+
+.whatsapp-btn a {
+    background: #25D366;
+    background: #25D366;
+    padding: 12px 20px;
+    border-radius: 30px;
+    color: white !important;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-btn a:hover {
+    background: #128C7E;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.whatsapp-btn i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.whatsapp-btn span {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(30px); }
+}
+
+@media (max-width: 768px) {
+    .whatsapp-btn {
+        bottom: 20px;
+        right: 15px;
+    }
+    .whatsapp-btn a {
+    background: #25D366;
+        padding: 10px 15px;
+    }
+    .whatsapp-btn span {
+        display: none;
+    }
+}
+}
+
+/* Botón WhatsApp fijo */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    animation: float 2s ease-in-out infinite;
+}
+
+.whatsapp-btn a {
+    background: #25D366;
+    background: #25D366;
+    padding: 12px 20px;
+    border-radius: 30px;
+    color: white !important;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-btn a:hover {
+    background: #128C7E;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.whatsapp-btn i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.whatsapp-btn span {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(30px); }
+}
+
+@media (max-width: 768px) {
+    .whatsapp-btn {
+        bottom: 20px;
+        right: 15px;
+    }
+    .whatsapp-btn a {
+    background: #25D366;
+        padding: 10px 15px;
+    }
+    .whatsapp-btn span {
+        display: none;
     }
 }

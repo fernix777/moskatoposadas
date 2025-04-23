@@ -1,0 +1,14 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'>
+  <style>
+    .cup { fill: none; stroke: #2c3e50; stroke-width: 4; }
+    .clink { fill: #e74c3c; }
+  </style>
+  <g transform='translate(25,35)'>
+    <!-- Copa izquierda -->
+    <path class='cup' d='M10 45 L10 20 Q10 0 25 0 L35 0 Q50 0 50 20 L50 45'/>
+    <!-- Copa derecha -->
+    <path class='cup' d='M60 45 L60 20 Q60 0 45 0 L35 0 Q20 0 20 20 L20 45' transform='scale(-1,1) translate(-110,0)'/>
+    <!-- Zona de choque -->
+    <circle class='clink' cx='35' cy='45' r='5'/>
+  </g>
+</svg>
