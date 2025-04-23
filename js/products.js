@@ -4,7 +4,7 @@ const products = [
     {
         id: 'a1',
         name: 'Vino Otro Loco Mas Malbec',
-        description: 'Vino tinto Malbec de alta calidad',
+        description: 'Vino tinto Malbec de alta calidad, elaborado con uvas seleccionadas de los mejores viñedos argentinos. Presenta notas intensas de frutos rojos maduros, especias y un sutil toque de vainilla. Su crianza en barricas de roble francés le otorga complejidad y estructura. Ideal para acompañar carnes rojas, pastas con salsas intensas y quesos maduros.',
         price: 4400,
         category: 'alcoholicas',
         image: '/img/bebidas-alcoholicas/otro_loco_mas.jpg',
@@ -14,12 +14,12 @@ const products = [
     {
         id: 'a2',
         name: 'Fernet Branca x 750ml',
-        description: 'Aperitivo Fernet Branca.',
-        price: 11500,
+        description: 'Fernet Branca es un aperitivo italiano amargo elaborado a partir de una mezcla de hierbas y especias. Con un sabor distintivo y complejo, es perfecto para cócteles clásicos como el Fernet con Cola. Su receta única incluye más de 27 hierbas diferentes, raíces y especias. Ideal para después de las comidas o como digestivo.',
+        price: 12900,
         category: 'alcoholicas',
         image: 'img/bebidas-alcoholicas/Fernet-Branca-Amaro.png',
         featured: true,
-        stock: 3
+        stock: 10
     },
     {
         id: 'a3',
@@ -37,17 +37,17 @@ const products = [
         description: 'Gin premium con botánicos seleccionados, ideal para cócteles sofisticados y servicio de delivery 24 horas.',
         price: 4200,
         category: 'alcoholicas',
-        image: 'img/products/gin.jpg',
+        image: 'img/bebidas-alcoholicas/logo-trajeta.png',
         featured: false,
         stock: 15
     },
     {
         id: 'a5',
-        name: 'Vodka Importado',
+        name: 'Vodka Sky',
         description: 'Vodka de alta calidad, destilado cinco veces para mayor pureza. Disponible en nuestro servicio de delivery cerca de tu ubicación.',
-        price: 3800,
+        price: 5500,
         category: 'alcoholicas',
-        image: 'img/products/vodka.jpg',
+        image: '/img/bebidas-alcoholicas/vodkasky.webp',
         featured: true,
         stock: 18
     },
@@ -77,7 +77,7 @@ const products = [
         id: 'na2',
         name: 'Gaseosa Cola 2.25L',
         description: 'Refresco sabor cola, ideal para acompañar comidas.',
-        price: 650,
+        price: 3400,
         category: 'no-alcoholicas',
         image: 'img/products/gaseosa-cola.jpg',
         featured: true,
@@ -170,7 +170,13 @@ function loadFeaturedProducts() {
     });
 }
 
-// Función para cargar todos los productos en la página de productos
+// Inicializar carga de productos cuando el DOM está listo
+document.addEventListener('DOMContentLoaded', function() {
+    loadFeaturedProducts();
+    loadAllProducts();
+});
+
+// Función para cargar todos los productos
 function loadAllProducts() {
     const productsContainer = document.getElementById('products-container');
     if (!productsContainer) return;
