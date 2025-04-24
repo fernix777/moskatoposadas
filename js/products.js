@@ -33,11 +33,11 @@ const products = [
     },
     {
         id: 'a4',
-        name: 'Gin Premium',
-        description: 'Gin premium con botánicos seleccionados, ideal para cócteles sofisticados y servicio de delivery 24 horas.',
-        price: 4200,
+        name: ' Absolute Vodka x 750ml',
+        description: 'Vodka premium con botánicos seleccionados, ideal para cócteles sofisticados y servicio de delivery 24 horas.',
+        price: 23000,
         category: 'alcoholicas',
-        image: 'img/bebidas-alcoholicas/logo-trajeta.png',
+        image: 'img/bebidas-alcoholicas/Absolut_vodka.jpeg',
         featured: false,
         stock: 15
     },
@@ -45,7 +45,7 @@ const products = [
         id: 'a5',
         name: 'Vodka Sky',
         description: 'Vodka de alta calidad, destilado cinco veces para mayor pureza. Disponible en nuestro servicio de delivery cerca de tu ubicación.',
-        price: 5500,
+        price: 7500,
         category: 'alcoholicas',
         image: '/img/bebidas-alcoholicas/vodkasky.webp',
         featured: true,
@@ -53,13 +53,55 @@ const products = [
     },
     {
         id: 'a6',
-        name: 'Fernet',
-        description: 'El clásico aperitivo italiano, perfecto para combinar. Entrega inmediata las 24 horas en Posadas.',
-        price: 2200,
+        name: 'Aperol Spritz',
+        description: 'Aperol Spritz es un cóctel italiano refrescante elaborado con Aperol, prosecco y agua con gas. Con su característico color naranja y sabor agridulce, es perfecto para momentos de aperitivo. Ideal para servir con hielo y una rodaja de naranja.',
+        price: 7900,
         category: 'alcoholicas',
-        image: 'img/products/fernet.jpg',
+        image: 'img/bebidas-alcoholicas/aperolSpritz.jpg',
         featured: false,
         stock: 30
+    },
+    {
+        id: 'a7',
+        name: 'Buhero Fernet x 750 ml',
+        description: 'Botella de Fernet Buhero x 750 ml, de suave fermentación. Ideal para acompañar comidas o como aperitivo.',
+        price: 8500,
+        category: 'alcoholicas',
+        image: 'img/bebidas-alcoholicas/BuheroNegro.jpg',
+        featured: false,
+        stock: 20
+    
+
+    },
+    {
+        id: 'a8',
+        name: 'Campari',
+        description: 'Campari es un aperitivo italiano compuesto por un extracto de campari, un tipo de naranja, y agua con gas. Es una bebida refrescante y sofisticada, perfecta para acompañar comidas o como aperitivo.',
+        price: 8500,
+        category: 'alcoholicas',
+        image: 'img/bebidas-alcoholicas/Campari.jpeg',
+        featured: false,
+        stock: 25
+        },
+
+    {
+        id: 'a9',
+        name: 'Fernet Branca x 450ml',
+        description: 'Fernet branca x450 ml.',
+        price: 8900,
+        category: 'alcoholicas',
+        image: 'img/bebidas-alcoholicas/fernetBranca450.png',
+        featured: false, 
+    },
+
+    {
+        id: 'a10',
+        name: 'Gancia x 1250 ml',
+        description: 'Aperitivo Gancia x 1250 ml',
+        price: 6500,
+        category: 'alcoholicas',
+        image: 'img/bebidas-alcoholicas/gancia_1250.jpg',
+        featured: false, 
     },
     
     // Bebidas No Alcohólicas
@@ -79,7 +121,7 @@ const products = [
         description: 'Refresco sabor cola, ideal para acompañar comidas.',
         price: 3400,
         category: 'no-alcoholicas',
-        image: 'img/products/gaseosa-cola.jpg',
+        image: 'img/bebidas-sin-alcohol/coca-2.25.jpg',
         featured: true,
         stock: 40
     },
@@ -89,7 +131,7 @@ const products = [
         description: 'Jugo de naranja 100% natural, sin conservantes ni azúcares añadidos.',
         price: 750,
         category: 'no-alcoholicas',
-        image: 'img/products/jugo-naranja.jpg',
+        image: 'img/bebidas-sin-alcohol/tarjetaBebidas.webp',
         featured: true,
         stock: 25
     },
@@ -119,7 +161,7 @@ const products = [
         description: 'Refresco con sabor a lima limón, refrescante y burbujeante.',
         price: 650,
         category: 'no-alcoholicas',
-        image: 'img/products/gaseosa-lima.jpg',
+        image: 'img/bebidas-sin-alcohol/coca-vidrio.webp',
         featured: true,
         stock: 38
     }
@@ -142,14 +184,7 @@ function loadFeaturedProducts() {
                 <div class="card-body text-center">
                     <h5 class="card-title">${product.name}</h5>
                     <p class="product-price">$${product.price.toFixed(2)}</p>
-                    <a href="producto.html?id=${product.id}" class="btn btn-outline-primary btn-sm">Ver Detalles</a>
-                    <button class="btn btn-primary btn-sm add-to-cart" 
-                        data-id="${product.id}" 
-                        data-name="${product.name}" 
-                        data-price="${product.price}" 
-                        data-image="${product.image}">
-                        <i class="fas fa-shopping-cart"></i> Añadir
-                    </button>
+                    <a href="productos.html?categoria=${product.category}" class="btn btn-outline-primary btn-sm">Ver Categoría</a>
                 </div>
             </div>
         </div>
@@ -157,17 +192,6 @@ function loadFeaturedProducts() {
     });
     
     featuredContainer.innerHTML = productsHTML;
-    
-    // Inicializar eventos para los botones de añadir al carrito
-    const addToCartButtons = featuredContainer.querySelectorAll('.add-to-cart');
-    addToCartButtons.forEach(button => {
-        button.addEventListener('click', function(event) {
-            // Usar la función del main.js
-            if (typeof handleAddToCart === 'function') {
-                handleAddToCart(event);
-            }
-        });
-    });
 }
 
 // Inicializar carga de productos cuando el DOM está listo
@@ -207,15 +231,11 @@ function loadAllProducts() {
                 <div class="card-body text-center">
                     <h5 class="card-title">${product.name}</h5>
                     <p class="product-price">$${product.price.toFixed(2)}</p>
-                    <p class="small text-muted">${product.description.substring(0, 60)}...</p>
-                    <a href="producto.html?id=${product.id}" class="btn btn-outline-primary btn-sm">Ver Detalles</a>
-                    <button class="btn btn-primary btn-sm add-to-cart" 
-                        data-id="${product.id}" 
-                        data-name="${product.name}" 
-                        data-price="${product.price}" 
-                        data-image="${product.image}">
-                        <i class="fas fa-shopping-cart"></i> Añadir
-                    </button>
+                    <p class="card-text">${product.description}</p>
+                    <a href="https://wa.me/5493764761039?text=Hola, me interesa el producto: ${encodeURIComponent(product.name)} - Precio: $${product.price}" 
+                       class="btn btn-success btn-sm w-100 mb-2">
+                       <i class="fab fa-whatsapp"></i> Consultar por WhatsApp
+                    </a>
                 </div>
             </div>
         </div>
